@@ -1,0 +1,27 @@
+
+
+
+.image{
+    z-index: 100% ;
+}
+.intro-title-wrapper {
+    height: 100%;
+    animation: move 15s linear infinite;
+    animation-duration: 10s;
+    
+}
+
+.intro-title {
+    overflow: hidden;
+}
+@keyframes move {
+    35%{
+        transform: translateY(-50px);
+    }
+    70%{
+        transform: translateY(-100px);
+    }
+    90%{
+        transform: translateY(-150px);
+    }
+}
