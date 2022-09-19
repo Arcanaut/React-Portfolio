@@ -7,6 +7,7 @@ import { useMediaQuery } from '@chakra-ui/react';
 import './header.css'
 
 //TODO: style scroll
+//TODO: Move image and possibly circle to later 'About' component
 
 function Header() {
     const { colorMode } = useColorMode(); 

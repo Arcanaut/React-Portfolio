@@ -6,13 +6,14 @@ import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
 import Header from "./components/Header/header";
 // import Portfolio from "./components/Portfolio";
 // import Contact from "./components/Contact";
-// TODO: potentially move Nav for PWA in to App.js instead of own component 
+// TODO: potentially move Nav for PWA in to App.js instead of own 
+//TODO: Get NPM packages from fontawesome for language icons
 function App() {
    
   const { colorMode, toggleColorMode } = useColorMode(); 
   const isDark = colorMode === "dark";
   return (
-    <VStack p={2}>
+    <VStack p={5}>
       <Flex w="100%">
         <Heading ml="8" size="md" fontWeight='extrabold' 
         color='cyan.500'>Home</Heading>
