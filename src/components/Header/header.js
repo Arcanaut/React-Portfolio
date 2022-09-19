@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink, Link } from "react-router-dom";
 import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout';
 import { Button } from '@chakra-ui/button';
 import { Image } from '@chakra-ui/image';
@@ -15,7 +16,20 @@ function Header() {
     const [isNotSmallerScreen] = useMediaQuery("(min-width-600px)");
     return(
         <Stack>
-
+ 
+          <NavLink exact activeClassName="active" to="/about">
+              <Link to="/about">about</Link>
+          </NavLink>
+          <NavLink exact activeClassName="active" to="/portfolio">
+              <Link to="/portfolio">portfolio</Link>
+          </NavLink>
+          <NavLink exact activeClassName="active" to="/contact">
+              <Link to="/contact">contact</Link>
+          </NavLink>
+          <NavLink exact activeClassName="active" to="/resume">
+              <Link to="/resume">resume</Link>
+          </NavLink>
+      
  <Flex direction={isNotSmallerScreen ? "row" : "column"}
                 spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
                 alignSelf="flex-start">
@@ -26,6 +40,10 @@ function Header() {
                     boxSize="300px" src='https://cdn.discordapp.com/attachments/968688052820140104/1015309067645898842/unknown.png'
                     />
                     <Box mt={isNotSmallerScreen? "0" : 16} align="flex-start">
+                        
+
+
+
                         <Text fontSize="5xl" fontWeight="semibold">Hi, I'm</Text>
                         <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'  >Brendan Ahearn</Text>
                             <Box className='intro-title'>
