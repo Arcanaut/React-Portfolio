@@ -1,3 +1,9 @@
 .active{
 color: green;
 }
+
+.NavLinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

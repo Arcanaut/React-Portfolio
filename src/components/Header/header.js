@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from "react-router-dom";
+
 import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout';
 import { Button } from '@chakra-ui/button';
 import { Image } from '@chakra-ui/image';
@@ -17,22 +17,13 @@ function Header() {
     return(
         <Stack>
  
-          <NavLink exact activeClassName="active" to="/about">
-              <Link to="/about">about</Link>
-          </NavLink>
-          <NavLink exact activeClassName="active" to="/portfolio">
-              <Link to="/portfolio">portfolio</Link>
-          </NavLink>
-          <NavLink exact activeClassName="active" to="/contact">
-              <Link to="/contact">contact</Link>
-          </NavLink>
-          <NavLink exact activeClassName="active" to="/resume">
-              <Link to="/resume">resume</Link>
-          </NavLink>
+         
       
  <Flex direction={isNotSmallerScreen ? "row" : "column"}
                 spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
                 alignSelf="flex-start">
+
+                    
                     <Circle position="absolute" bg="blue.100" opacity="0.1" w="300px" h="300px" alignSelf="flex-end"></Circle>
  <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
                     mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
@@ -50,9 +41,9 @@ function Header() {
                             <Text color={isDark ? "gray.200" : "gray.500"}  className="intro-title-wrapper">
                                 <div  className="intro-item" >Full-Stack Web Developer</div>
                                 <break></break>
-                                <div  className="intro-item">Game Tester</div>
+                                <div  className="intro-item">Designer</div>
                                 <break></break> 
-                                <div  className="intro-item">life long learner</div>   
+                                <div  className="intro-item">Life Long Learner</div>   
                             </Text>
                             </Box>
                             <Button mt={8} colorScheme="blue" onClick={() => window.open("https://docs.google.com/document/d/11pqyqCb4AtIcOBAPoHOvd2RLn8vaI2Aec0z2zG7VciI/edit?usp=sharing")}>Resume
