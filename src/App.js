@@ -1,9 +1,8 @@
 
-import { BrowserRouter as Router, Switch, Route, NavLink, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, NavLink, Link } from "react-router-dom";
 import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
-import { Flex, VStack, Heading } from "@chakra-ui/layout";
-import { FaSun, FaMoon, } from "react-icons/fa";
+import { VStack } from "@chakra-ui/layout";
 
 import Header from "./components/Header/header";
 import About from "./components/About/about";
@@ -22,8 +21,11 @@ function App() {
     <Router>
       <VStack p={5}>
        <Nav></Nav>
+       <Routes>
+        <Route path="/" element={<Header/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
+        </Routes>
         
-        <Header></Header>
         {/* <Portfolio></Portfolio>
         <Contact></Contact> */}
       </VStack>
