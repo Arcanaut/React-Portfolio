@@ -1,4 +1,5 @@
 import React from 'react'
+//do not delete Router, Switch, or Route despite terminal saying they are unused. Deletion results in page unable to render
 import { BrowserRouter as Router, Switch, Route, NavLink, Link } from "react-router-dom";
 
 import { IconButton } from "@chakra-ui/button";
@@ -10,7 +11,7 @@ import About from "../About/about"
 
 
 
-
+//TODO: Make 'resume' act as external link to google drive
 function Nav() {
     
     const { colorMode, toggleColorMode } = useColorMode(); 
