@@ -41,9 +41,9 @@ function Header() {
                         <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'  >Brendan Ahearn</Text>
                             <Box className='intro-title'>
                             <Text color={isDark ? "gray.200" : "gray.500"}  className="intro-title-wrapper">
-                                <div  className="intro-item" >Full-Stack Web Developer</div>
-                                <break></break>
                                 <div  className="intro-item">Designer</div>
+                                <break></break>
+                                <div  className="intro-item" >Full-Stack Web Developer</div>
                                 <break></break> 
                                 <div  className="intro-item">Life Long Learner</div>   
                             </Text>
