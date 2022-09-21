@@ -1,11 +1,12 @@
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink, Link } from "react-router-dom";
 import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Heading } from "@chakra-ui/layout";
 import { FaSun, FaMoon, } from "react-icons/fa";
+
 import Header from "./components/Header/header";
-import { NavLink, Link } from "react-router-dom";
+import About from "./components/About/about";
 // import About from "./About";
 // import Portfolio from "./components/Portfolio";
 // import Contact from "./components/Contact";
@@ -26,11 +27,13 @@ function App() {
               <NavLink exact activeClassName="active" to="/">
                   <Link to="/">Home</Link>
               </NavLink>
+              
           </Heading>
 
            <NavLink exact activeClassName="active" to="/about">
-              <Link to="/about">about</Link>
+              <Link to="/about" component={About}>about</Link>
           </NavLink>
+          
           <NavLink exact activeClassName="active" to="/portfolio">
               <Link to="/portfolio">portfolio</Link>
           </NavLink>
@@ -57,6 +60,7 @@ function App() {
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/contact" component={Contact} />
       </Switch> */}
+      <About></About>
     </Router>
   );
 }
