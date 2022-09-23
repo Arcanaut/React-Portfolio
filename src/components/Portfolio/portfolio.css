@@ -24,6 +24,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.live-btn {
+    color: #0dc2e9
+}
+
+.git-btn {
+    color: #74ec74;
+}
+
 
 @media screen and (max-width: 980px) {
     .list {
@@ -40,5 +48,9 @@
 
     .list-description {
         display: none;
+    }
+
+    .portfolio-img {
+        
     }
 }

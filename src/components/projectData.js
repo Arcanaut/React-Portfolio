@@ -1,4 +1,10 @@
 import WorkDay from "../images/WorkDay.png";
+import budgetTracker from "../images/budgetTracker.png";
+import techBlog from "../images/techBlog.png";
+import noteTaker from "../images/noteTaker.png";
+
+
+
 
 export const projects = [
     {
@@ -12,13 +18,33 @@ export const projects = [
     },
     {
         id: 2,
-        img: 
-        title: "",
-        description: "",
-        skills: "Built with: ",
-        link: "",
-        github: "",
-    }
+        img: budgetTracker,
+        title: "Budget Tracker",
+        description: "A budgeting app that tracks money gained and money loss over time and builds a graph to represent the account history.",
+        skills: "Built with: HTML / CSS / Node.js / ",
+        link: "https://stormy-everglades-34049.herokuapp.com/",
+        github: "https://github.com/Arcanaut/Budget-Tracker",
+    },
+
+    {
+        id: 3,
+        img: techBlog,
+        title: "Hello Word!",
+        description: "A techblog that allows the user to create an account, posts, and comments.",
+        skills: "Built with: HTML / CSS / JavaScript / Node.js / MySql / mySql2 / Mongoose / Express / Express-Handlebars / Handlebars /",
+        link: "https://obscure-woodland-17062.herokuapp.com/",
+        github: "https://github.com/Arcanaut/tech-blog",
+    },
+
+    {
+        id: 4,
+        img: noteTaker,
+        title: "Note Taker",
+        description: "An app for keeping and saving notes",
+        skills: "Built with: HTML / CSS / JavaScript / Node.js / Express / uuid /",
+        link: "https://dry-atoll-32803.herokuapp.com/",
+        github: "https://github.com/Arcanaut/Note-Taker",
+    },
     
 ];
 

@@ -1,6 +1,6 @@
 import "./project.css";
 import Portfolio from "../Portfolio/portfolio";
-import {projects} from "../projectData";
+import { projects } from "../projectData";
 
 const Project = () => {
     return (
