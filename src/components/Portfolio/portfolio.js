@@ -1,17 +1,26 @@
 import React from 'react';
 import './portfolio.css';
+import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout';
+import { Image } from '@chakra-ui/image';
+import { useMediaQuery } from '@chakra-ui/react';
 
-
+{/* <Flex direction={isNotSmallerScreen ? "row" : "column"}
+                spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
+                alignSelf="flex-start"></Flex> */}
 const Portfolio = ({img, title, collab, description, skills, link, github}) => {
+    const [isNotSmallerScreen] = useMediaQuery("(min-width-600px)")
     return (
-        <div className="portfolio">
-            <div className="portfolio-browser">
+        <Stack className="portfolio">
+            {/* <div ">
                
-            </div>
-            <img src={img} alt="" className="portfolio-img" />
+            </div> */}
+            <Flex className="portfolio-browser" direction={isNotSmallerScreen ? "row" : "column"}
+                spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
+                alignSelf="flex-center">
+            <Image src={img} alt="" className="portfolio-img" />
             <div className="project-info">
                 <div className="project-title">
-                    <h1>{title}</h1>
+                    <Text fontSize="4xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>{title}</Text>
                 </div>
                 <div className="project-collab">
                     <p>{collab}</p>
@@ -32,7 +41,8 @@ const Portfolio = ({img, title, collab, description, skills, link, github}) => {
                     </a>
                 </div>
             </div>
-        </div>
+            </Flex>
+        </Stack>
     )
 }
 
