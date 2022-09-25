@@ -3,7 +3,7 @@ import Portfolio from "../Portfolio/portfolio";
 import { projects } from "../projectData";
 
 //TODO: Have tabs change color depending on last one clicked to show where user is
-
+//TODO: potentially make black background dynamic like contact form
 const Project = () => {
     return (
         <div className="list">

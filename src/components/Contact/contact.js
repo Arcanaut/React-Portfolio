@@ -23,7 +23,7 @@ import {
 
 
 // import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
-// import { MdEmail, MdOutlineEmail } from "react-icons/md";
+import { MdEmail, MdOutlineEmail } from "react-icons/md";
 
 
 function Contact(){
@@ -42,8 +42,8 @@ function Contact(){
                     }, 
                         (error) => {
                         console.log(error.text);
-                    },e.target.reset());
-                        
+                    },
+                e.target.reset());        
                 };
 
     return (
@@ -56,13 +56,15 @@ function Contact(){
         //   backgroundAttachment: 'fixed',
         // }}
         id="contact"
-      >
+        >
+
         <Box
             borderRadius="lg"
             m={{ base: 5, md: 16, lg: 10 }}
             p={{ base: 5, lg: 16 }}
             >
-
+            
+            <Box>
         <VStack spacing={{ base: 4, md: 8, lg: 20 }}></VStack>
 
         <Heading
@@ -73,30 +75,54 @@ function Contact(){
               >
                 Reach Out
               </Heading>
-<VStack
-                spacing={{ base: 4, md: 8, lg: 20 }}
-                direction={{ base: "column", md: "row" }}
+
+                <VStack
+                  spacing={{ base: 4, md: 8, lg: 20 }}
+                  direction={{ base: "column", md: "row" }}
                 >
                 <VStack
                   align="center"
                   justify="space-around"
                   direction={{ base: "row", md: "column" }}>
-                  <Tooltip
+
+                <Tooltip
                     label={hasCopied ? "Email Copied!" : "Copy Email"}
                     closeOnClick={false}
                     hasArrow>
+
+<IconButton
+                      aria-label="email"
+                      variant="ghost"
+                      size="lg"
+                      fontSize="3xl"
+                      icon={<MdEmail />}
+                      _hover={{
+                        bg: "blue.500",
+                        color: useColorModeValue("white", "gray.700")
+                      }}
+                      onClick={onCopy}
+                      isRound
+                    />
+
+                    
+ </Tooltip>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input type="text" name="user_name"
+        placeholder='Your name' />
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input type="email" name="user_email"
+         placeholder='Your email'/>
         <label>Message</label>
-        <textarea name="message" />
+        <textarea name="message"
+        placeholder='Your message' />
+        
         <input type="submit" value="Send" />
       </form>
-      </Tooltip>
+     
       </VStack>
       </VStack>
+      </Box>
       </Box>
       </Flex>
     
