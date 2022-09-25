@@ -1,10 +1,26 @@
 import { React, useRef } from 'react';
 import emailjs from "@emailjs/browser";
 
- //chakra UI styling
 import {
-  Box
-} from "@chakra-ui/react";
+    Box,
+    Button,
+    Flex,
+    FormControl,
+    FormLabel,
+    Heading,
+    IconButton,
+    Input,
+    InputGroup,
+    InputLeftElement,
+    Link,
+    Stack,
+    Textarea,
+    Tooltip,
+    useClipboard,
+    useColorModeValue,
+    VStack
+  } from "@chakra-ui/react";
+
 
 // import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
 // import { MdEmail, MdOutlineEmail } from "react-icons/md";
@@ -12,6 +28,7 @@ import {
 
 function Contact(){
     const form =useRef();
+    const { hasCopied, onCopy } = useClipboard("brendan.ahearn@gmail.com");
     const sendEmail = (e) => {
         e.preventDefault();
     
@@ -21,14 +38,53 @@ function Contact(){
             '1spzpYZW8x2zRzRm5')
                 .then((result) => {    
                     console.log(result.text);
+                    console.log("message sent!")
                     }, 
                         (error) => {
                         console.log(error.text);
-                    });
+                    },e.target.reset());
+                        
                 };
 
     return (
-        <Box>
+        <Flex
+        bg={useColorModeValue("gray.100", "gray.900")}
+        align="center"
+        justify="center"
+        // css={{
+        //   backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
+        //   backgroundAttachment: 'fixed',
+        // }}
+        id="contact"
+      >
+        <Box
+            borderRadius="lg"
+            m={{ base: 5, md: 16, lg: 10 }}
+            p={{ base: 5, lg: 16 }}
+            >
+
+        <VStack spacing={{ base: 4, md: 8, lg: 20 }}></VStack>
+
+        <Heading
+                fontSize={{
+                  base: "4xl",
+                  md: "5xl"
+                }}
+              >
+                Reach Out
+              </Heading>
+<VStack
+                spacing={{ base: 4, md: 8, lg: 20 }}
+                direction={{ base: "column", md: "row" }}
+                >
+                <VStack
+                  align="center"
+                  justify="space-around"
+                  direction={{ base: "row", md: "column" }}>
+                  <Tooltip
+                    label={hasCopied ? "Email Copied!" : "Copy Email"}
+                    closeOnClick={false}
+                    hasArrow>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" />
@@ -38,11 +94,18 @@ function Contact(){
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>
-    </Box>
+      </Tooltip>
+      </VStack>
+      </VStack>
+      </Box>
+      </Flex>
+    
     );
 };
 
 export default Contact;
+
+
 
 
 
