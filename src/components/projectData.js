@@ -18,8 +18,8 @@ export const projects = [
     },
     {
         id: 2,
-        img: budgetTracker,
         title: "Budget Tracker",
+         img: budgetTracker,
         description: "A budgeting app that tracks money gained and money loss over time and builds a graph to represent the account history.",
         skills: "Built with: HTML / CSS / Node.js / ",
         link: "https://stormy-everglades-34049.herokuapp.com/",
@@ -28,8 +28,8 @@ export const projects = [
 
     {
         id: 3,
-        img: techBlog,
         title: "Hello Word!",
+        img: techBlog,
         description: "A techblog that allows the user to create an account, posts, and comments.",
         skills: "Built with: HTML / CSS / JavaScript / Node.js / MySql / mySql2 / Mongoose / Express / Express-Handlebars / Handlebars /",
         link: "https://obscure-woodland-17062.herokuapp.com/",
@@ -38,8 +38,8 @@ export const projects = [
 
     {
         id: 4,
-        img: noteTaker,
         title: "Note Taker",
+        img: noteTaker,
         description: "An app for keeping and saving notes",
         skills: "Built with: HTML / CSS / JavaScript / Node.js / Express / uuid /",
         link: "https://dry-atoll-32803.herokuapp.com/",

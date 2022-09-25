@@ -4,9 +4,8 @@ import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout';
 import { Image } from '@chakra-ui/image';
 import { useMediaQuery } from '@chakra-ui/react';
 
-{/* <Flex direction={isNotSmallerScreen ? "row" : "column"}
-                spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
-                alignSelf="flex-start"></Flex> */}
+//TODO: Round corners of black background to be less sharp
+//TODO: Change <div> tags to <Box> for Chakra UI implementation
 const Portfolio = ({img, title, collab, description, skills, link, github}) => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width-600px)")
     return (
@@ -17,21 +16,21 @@ const Portfolio = ({img, title, collab, description, skills, link, github}) => {
             <Flex className="portfolio-browser" direction={isNotSmallerScreen ? "row" : "column"}
                 spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
                 alignSelf="flex-center">
-            <Image src={img} alt="" className="portfolio-img" />
-            <div className="project-info">
-                <div className="project-title">
+            <Box className="project-info">
+                <Box className="project-title">
                     <Text fontSize="4xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>{title}</Text>
-                </div>
-                <div className="project-collab">
+                </Box>
+            <Image src={img} alt="" className="portfolio-img" />
+                <Box className="project-collab">
                     <p>{collab}</p>
-                </div>
-                <div className="project-description">
+                </Box>
+                <Box className="project-description">
                     <p>{description}</p>
-                </div>
-                <div className="skills-used">
+                </Box>
+                <Box className="skills-used">
                     <p>{skills}</p>
-                </div>
-                <div className="project-links">
+                </Box>
+                <Box className="project-links">
                     <a className="live-btn" href={link} target="_blank" rel="noreferrer">
                         live site
                     </a>
@@ -39,8 +38,8 @@ const Portfolio = ({img, title, collab, description, skills, link, github}) => {
                     <a className="git-btn" href={github} target="_blank" rel="noreferrer">
                         github
                     </a>
-                </div>
-            </div>
+                </Box>
+            </Box>
             </Flex>
         </Stack>
     )
