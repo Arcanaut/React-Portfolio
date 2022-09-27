@@ -18,6 +18,7 @@ import {
     Tooltip,
     useClipboard,
     useColorModeValue,
+    useMediaQuery,
     VStack
   } from "@chakra-ui/react";
 
@@ -27,6 +28,7 @@ import { MdEmail, MdOutlineEmail } from "react-icons/md";
 
 
 function Contact(){
+  const [isNotSmallerScreen] = useMediaQuery("(min-width-600px)");
     const form =useRef();
     const { hasCopied, onCopy } = useClipboard("brendan.ahearn@gmail.com");
     const sendEmail = (e) => {
@@ -47,10 +49,12 @@ function Contact(){
                 };
 
     return (
+      
         <Flex
         bg={useColorModeValue("gray.100", "gray.900")}
-        align="center"
-        justify="center"
+        direction={isNotSmallerScreen ? "row" : "column"}
+                spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
+                alignSelf="flex-center"
         // css={{
         //   backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
         //   backgroundAttachment: 'fixed',
@@ -59,9 +63,7 @@ function Contact(){
         >
 
         <Box
-            borderRadius="lg"
-            m={{ base: 5, md: 16, lg: 10 }}
-            p={{ base: 5, lg: 16 }}
+            mt={isNotSmallerScreen? "0" : 16}
             >
             
             <Box>
@@ -81,8 +83,7 @@ function Contact(){
                   direction={{ base: "column", md: "row" }}
                 >
                 <VStack
-                  align="center"
-                  justify="space-around"
+                  mt={isNotSmallerScreen? "0" : 16} align="flex-start"
                   direction={{ base: "row", md: "column" }}>
 
                 <Tooltip
@@ -106,10 +107,12 @@ function Contact(){
 
                     
  </Tooltip>
+ <Box >
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name"
         placeholder='Your name' />
+        
         <label>Email</label>
         <input type="email" name="user_email"
          placeholder='Your email'/>
@@ -119,7 +122,7 @@ function Contact(){
         
         <input type="submit" value="Send" />
       </form>
-     
+     </Box>
       </VStack>
       </VStack>
       </Box>

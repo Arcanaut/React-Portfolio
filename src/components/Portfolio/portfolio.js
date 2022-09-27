@@ -1,6 +1,6 @@
 import React from 'react';
 import './portfolio.css';
-import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout';
+import { Stack, Flex, Box, Text } from '@chakra-ui/layout';
 import { Image } from '@chakra-ui/image';
 import { useMediaQuery } from '@chakra-ui/react';
 
@@ -10,9 +10,7 @@ const Portfolio = ({img, title, collab, description, skills, link, github}) => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width-600px)")
     return (
         <Stack className="portfolio">
-            {/* <div ">
-               
-            </div> */}
+           
             <Flex className="portfolio-browser" direction={isNotSmallerScreen ? "row" : "column"}
                 spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
                 alignSelf="flex-center">
@@ -20,7 +18,7 @@ const Portfolio = ({img, title, collab, description, skills, link, github}) => {
                 <Box className="project-title">
                     <Text fontSize="4xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>{title}</Text>
                 </Box>
-            <Image src={img} alt="" className="portfolio-img" />
+            <Image src={img} alt="" className="portfolio-img" rounded={45}  />
                 <Box className="project-collab">
                     <p>{collab}</p>
                 </Box>

@@ -1,7 +1,7 @@
 import React from "react";
 import { IconButton } from "@chakra-ui/button";
 import {FaGithub, FaLinkedin,  FaFilePdf } from "react-icons/fa";
-import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout';
+import { Box } from '@chakra-ui/layout';
 
 
 function Footer(){

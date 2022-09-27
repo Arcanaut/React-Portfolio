@@ -1,7 +1,9 @@
 import WorkDay from "../images/WorkDay.png";
+import Workday2 from "../images/Workday2.png"
 import budgetTracker from "../images/budgetTracker.png";
 import techBlog from "../images/techBlog.png";
 import noteTaker from "../images/noteTaker.png";
+import noteTaker2 from "../images/noteTaker2.png"
 
 
 
@@ -9,9 +11,9 @@ import noteTaker from "../images/noteTaker.png";
 export const projects = [
     {
         id: 1,
-        img: WorkDay,
+        img: Workday2,
         title: "Work Day Scheduler",
-        description: "An app for keeping track of tasks through out your day.",
+        description: "An app for keeping track of tasks throughout your day.",
         skills: "Built with: HTML / Javascript / CSS /",
         link: "https://arcanaut.github.io/Work-Day-Scheduler/",
         github: "https://github.com/Arcanaut/Work-Day-Scheduler",
@@ -39,7 +41,7 @@ export const projects = [
     {
         id: 4,
         title: "Note Taker",
-        img: noteTaker,
+        img: noteTaker2,
         description: "An app for keeping and saving notes",
         skills: "Built with: HTML / CSS / JavaScript / Node.js / Express / uuid /",
         link: "https://dry-atoll-32803.herokuapp.com/",
