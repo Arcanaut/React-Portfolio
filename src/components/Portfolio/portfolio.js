@@ -30,11 +30,11 @@ const Portfolio = ({img, title, collab, description, skills, link, github}) => {
                 </Box>
                 <Box className="project-links">
                     <a className="live-btn" href={link} target="_blank" rel="noreferrer">
-                        live site
+                        Deployed
                     </a>
                     <br></br>
                     <a className="git-btn" href={github} target="_blank" rel="noreferrer">
-                        github
+                        Github
                     </a>
                 </Box>
             </Box>

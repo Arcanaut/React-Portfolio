@@ -16,10 +16,12 @@
     justify-content: space-between;
 }
 .live-btn {
-    color: #0dc2e9
+    color: #0dc2e9;
+    font-weight: 450
 }
 
 .git-btn {
     color: #74ec74;
+    font-weight: 450
 }
 

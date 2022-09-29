@@ -1,6 +1,6 @@
 import { React, useRef } from 'react';
 import emailjs from "@emailjs/browser";
-
+import '../Contact/contact.css'
 import {
     Box,
     Button,
@@ -55,11 +55,7 @@ function Contact(){
         direction={isNotSmallerScreen ? "row" : "column"}
                 spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
                 alignSelf="flex-center"
-        // css={{
-        //   backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
-        //   backgroundAttachment: 'fixed',
-        // }}
-        id="contact"
+                id="contact"
         >
 
         <Box
@@ -108,7 +104,7 @@ function Contact(){
                     
  </Tooltip>
  <Box >
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} className="contactForm">
         <label>Name</label>
         <input type="text" name="user_name"
         placeholder='Your name' />

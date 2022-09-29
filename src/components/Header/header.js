@@ -22,7 +22,7 @@ function Header() {
                 alignSelf="flex-start">
 
                     
-                    <Circle position="absolute" bg="blue.100" opacity="0.1" w="300px" h="300px" alignSelf="flex-end"></Circle>
+                    <Circle position="absolute" bg="blue.100" opacity="0.1" w="300px" h="300px" alignSelf="center"></Circle>
  <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
                     mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
                     backgroundColor="transparent" boxShadow="lg"
@@ -43,12 +43,23 @@ function Header() {
                                 <break></break> 
                                 <div  className="intro-item">Life Long Learner</div>   
                             </Text>
+                            <Text></Text>
                             </Box>
                             
+                            
                     </Box>
-                    
+                    <Box alignSelf="flex-end">
+                                <Text>
+                    and I am a firm believer that adaptability is the key to success. That's why I went to school at Southern Methodist University, where I am learning both the latest and
+                legacy languages and frameworks to become Fullstack Web Developer. To see some of my fullstack and front end projects, navigate to my portfolio with the tab above! If you would like
+                to view more of my work including my back-end exclusive code, follow the link below to my github.
+                
+                                </Text>
+                            </Box>
                     </Flex>
+            
         </Stack>
+        
     )
 }
 

@@ -6,7 +6,7 @@ import { Box } from '@chakra-ui/layout';
 
 function Footer(){
     return (
-        <Box>
+        <Box alignSelf={'center'}>
 
         <IconButton ml={4} icon={<FaFilePdf/>}  isRound="true" onClick={() => window.open("https://docs.google.com/document/d/11pqyqCb4AtIcOBAPoHOvd2RLn8vaI2Aec0z2zG7VciI/edit?usp=sharing")}>
         </IconButton>
