@@ -8,7 +8,7 @@ import Nav from "./components/Nav/nav";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
 import Project from "./components/Project/project";
-import Skills from "./components/Skills/skills";
+
 
 
 //TODO: Potentially create page for resume instead of just link to google drive
@@ -25,7 +25,7 @@ function App() {
             <Route path="/portfolio" element={<Project/>}></Route>
             <Route path="/contact" element={<Contact/>}></Route>
           </Routes>
-        <Skills></Skills>
+       
         <Footer></Footer>
       </Stack>
     
