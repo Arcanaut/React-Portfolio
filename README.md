@@ -3,7 +3,7 @@
 
 Designed and developed by Brendan Ahearn
 
-![portfolio]()
+![portfolio](https://github.com/Arcanaut/React-Portfolio/blob/main/images/portfolio.png)
 ## App Description
 A portfolio of some of my Front-End and Fullstack projects
 
