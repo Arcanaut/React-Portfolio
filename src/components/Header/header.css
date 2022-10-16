@@ -1,0 +1,39 @@
+
+.skills-list {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image{
+    z-index: 100% ;
+}
+.intro-title-wrapper {
+    height: 100%;
+    animation: move 15s linear infinite;
+    animation-duration: 10s;
+    
+}
+
+.intro-item {
+    color: rgb(116, 236, 116);;
+}
+
+
+.intro-title {
+    overflow: hidden;
+}
+@keyframes move {
+    35%{
+        transform: translateY(-50px);
+    }
+    70%{
+        transform: translateY(-100px);
+    }
+    90%{
+        transform: translateY(-150px);
+    }
+}

@@ -1,0 +1,27 @@
+
+.list-title {
+    font-size: 50px;
+    font-weight: 600;
+    border-bottom: 5px solid rgb(116, 236, 116);
+}
+
+.list-description {
+    margin: 20px 0px;
+}
+
+.list-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.live-btn {
+    color: #0dc2e9;
+    font-weight: 450
+}
+
+.git-btn {
+    color: #74ec74;
+    font-weight: 450
+}
+

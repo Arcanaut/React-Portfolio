@@ -1,40 +1,36 @@
 
-import React from "react";
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 
-import  Contact  from "./components/Contact"
+import { VStack, Stack } from "@chakra-ui/layout";
 
-import { IconButton } from "@chakra-ui/button";
-import { useColorMode } from "@chakra-ui/color-mode";
-import { Flex, VStack, Heading, Spacer } from "@chakra-ui/layout";
-import { FaSun, FaMoon } from "react-icons/fa";
+import Header from "./components/Header/header";
+import Nav from "./components/Nav/nav";
+import Contact from "./components/Contact/contact";
+import Footer from "./components/Footer/footer";
+import Project from "./components/Project/project";
 
-//TODO: Get App to read imported ContactMe component and return it.
 
-// import reactDom from "react-dom";
 
+//TODO: Potentially create page for resume instead of just link to google drive
+//TODO: Get NPM packages from fontawesome for language icons
 function App() {
    
-  const { colorMode, toggleColorMode } = useColorMode(); 
-  const isDark = colorMode === "dark";
+
   return (
-    <div>
-      <VStack>
-          <Flex w="100%">
-                <Heading ml="2" size="md" fontWeight='extrabold' 
-             color='blue.500' >Portfolio</Heading>
-
-        <Spacer></Spacer>
-
-       <IconButton ml={9} icon={isDark ? <FaSun /> : <FaMoon />} 
-       isRound="true" onClick={toggleColorMode}></IconButton>
-      </Flex>
-    </VStack>
-
-      <Contact />
-
-      </div>
+    <Router>
+      <Stack p={5}>
+        <Nav></Nav>
+          <Routes>
+            <Route path="/" element={<Header/>}></Route>
+            <Route path="/portfolio" element={<Project/>}></Route>
+            <Route path="/contact" element={<Contact/>}></Route>
+          </Routes>
+       
+        <Footer></Footer>
+      </Stack>
     
+    </Router>
   );
 }
-   
+
 export default App;
