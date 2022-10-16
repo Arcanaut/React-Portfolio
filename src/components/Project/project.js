@@ -1,9 +1,9 @@
 import "./project.css";
 import Portfolio from "../Portfolio/portfolio";
 import { projects } from "../projectData";
-import { Stack, Flex, Box, Text } from '@chakra-ui/layout';
+import { Stack, Box, Text } from '@chakra-ui/layout';
 //TODO: Have tabs change color depending on last one clicked to show where user is
-//TODO: potentially make black background dynamic like contact form
+
 const Project = () => {
     return (
         <Stack className="list">
