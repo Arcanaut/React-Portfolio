@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 
-import { VStack, Stack } from "@chakra-ui/layout";
+import { Stack } from "@chakra-ui/layout";
 
 import Header from "./components/Header/header";
 import Nav from "./components/Nav/nav";
@@ -11,8 +11,8 @@ import Project from "./components/Project/project";
 
 
 
-//TODO: Potentially create page for resume instead of just link to google drive
-//TODO: Get NPM packages from fontawesome for language icons
+//TODO: Potentially create page for skills instead of just a link to google drive
+
 function App() {
    
 

@@ -2,6 +2,7 @@ import Workday2 from "../images/Workday2.png"
 import budgetTracker from "../images/budgetTracker.png";
 import techBlog from "../images/techBlog.png";
 import noteTaker2 from "../images/noteTaker2.png"
+import portfolio from "../images/portfolio.png"
 
 
 
@@ -45,6 +46,16 @@ export const projects = [
         link: "https://dry-atoll-32803.herokuapp.com/",
         github: "https://github.com/Arcanaut/Note-Taker",
     },
+
+    {
+        id: 5,
+        title: "Portfolio",
+        img: portfolio,
+        description: "The very portfolio you're currently looking at!",
+        skills: "Built with: HTML / CSS / JavaScript / Node.js / React / React-Router / Chakra-UI",
+        link: "",
+        github:"https://github.com/Arcanaut/React-Portfolio"
+    }
     
 ];
 

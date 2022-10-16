@@ -4,13 +4,12 @@ import { Stack, Flex, Box, Text } from '@chakra-ui/layout';
 import { Image } from '@chakra-ui/image';
 import { useMediaQuery } from '@chakra-ui/react';
 
-//TODO: Round corners of black background to be less sharp
-//TODO: Change <div> tags to <Box> for Chakra UI implementation
+
 const Portfolio = ({img, title, collab, description, skills, link, github}) => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width-600px)")
     return (
         <Stack className="portfolio">
-           
+        
             <Flex className="portfolio-browser" direction={isNotSmallerScreen ? "row" : "column"}
                 spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
                 alignSelf="flex-center">
@@ -36,7 +35,9 @@ const Portfolio = ({img, title, collab, description, skills, link, github}) => {
                     <a className="git-btn" href={github} target="_blank" rel="noreferrer">
                         Github
                     </a>
+                    
                 </Box>
+                <break></break>
             </Box>
             </Flex>
         </Stack>
