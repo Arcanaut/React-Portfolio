@@ -1,11 +1,11 @@
-# Social-Network-API
+# React-Portfolio
 
 
 Designed and developed by Brendan Ahearn
 
-![Social-Network-API](https://github.com/Arcanaut/Social-Network-API/blob/main/assets/thumbnail.png)
+![portfolio]()
 ## App Description
-An inventory tracking app used to manage the stock of a store, including the type of item, the number, the category, the price, and more.
+A portfolio of some of my Front-End and Fullstack projects
 
 ## App Components
 
