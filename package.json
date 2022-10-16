@@ -1,6 +1,6 @@
 {
-  "homepage": "https://arcanaut.github.io/React-Portfolio/",
   "name": "react-portfolio",
+  "homepage": "https://arcanaut.github.io/React-Portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
