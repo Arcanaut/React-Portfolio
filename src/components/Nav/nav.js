@@ -6,7 +6,6 @@ import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, Heading } from "@chakra-ui/layout";
 import { FaSun, FaMoon } from "react-icons/fa";
 
-
 function Nav() {
     
     const { colorMode, toggleColorMode } = useColorMode(); 
