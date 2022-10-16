@@ -1,7 +1,7 @@
 import React from 'react'
 //do not delete Router, Switch, or Route despite terminal saying they are unused. Deletion results in page unable to render
 import { BrowserRouter as Router, Switch, Route, NavLink, Link } from "react-router-dom";
-import { IconButton } from "@chakra-ui/button";
+import { IconButton, Button } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, Heading } from "@chakra-ui/layout";
 import { FaSun, FaMoon } from "react-icons/fa";
@@ -22,16 +22,18 @@ const isDark = colorMode === "dark";
         </NavLink>
     </Heading>
 
-    
+    <Button>
     <NavLink exact activeClassName="active" to="/portfolio">
         <Link to="/portfolio">portfolio</Link>
     </NavLink>
+    </Button>
+    
+    <Button>
     <NavLink exact activeClassName="active" to="/contact">
         <Link to="/contact">contact</Link>
     </NavLink>
-    <NavLink exact activeClassName="active" to="/resume">
-        <Link to="/resume">resume</Link>
-    </NavLink>
+    </Button>
+    <Button onClick={() => window.open("https://docs.google.com/document/d/11pqyqCb4AtIcOBAPoHOvd2RLn8vaI2Aec0z2zG7VciI/edit?usp=sharing")}>resume</Button>
 
   
   <IconButton ml={9} icon={isDark ? <FaSun /> : <FaMoon />} 

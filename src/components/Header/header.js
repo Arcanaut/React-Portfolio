@@ -25,9 +25,9 @@ function Header() {
                     <Circle position="absolute" bg="blue.100" opacity="0.1" w="300px" h="300px" alignSelf="center"></Circle>
  <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
                     mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
-                    backgroundColor="transparent" boxShadow="lg"
-                    boxSize="300px" src='https://cdn.discordapp.com/attachments/968688052820140104/1015309067645898842/unknown.png'
-                    />
+                     boxShadow="lg"
+                    boxSize="300px" src='https://cdn.discordapp.com/attachments/682377563707801660/1026903083457986570/2022-10-04-11-58-14-632.jpg'
+                    alt='Brendan Ahearn wearing a suit'/>
                     <Box mt={isNotSmallerScreen? "0" : 16} align="flex-start">
                         
 

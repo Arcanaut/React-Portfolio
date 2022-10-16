@@ -3,19 +3,9 @@ import emailjs from "@emailjs/browser";
 import '../Contact/contact.css'
 import {
     Box,
-    Button,
-    Center,
     Flex,
-    FormControl,
-    FormLabel,
     Heading,
     IconButton,
-    Input,
-    InputGroup,
-    InputLeftElement,
-    Link,
-    Stack,
-    Textarea,
     Tooltip,
     useClipboard,
     useColorModeValue,
@@ -25,7 +15,7 @@ import {
 
 
 // import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
-import { MdEmail, MdOutlineEmail } from "react-icons/md";
+import { MdOutlineEmail } from "react-icons/md";
 
 
 function Contact(){
@@ -83,7 +73,7 @@ function Contact(){
                   base: "4xl",
                   md: "5xl"
                 }} 
-              >
+              className="title">
                 Reach Out
               </Heading>
               <br />

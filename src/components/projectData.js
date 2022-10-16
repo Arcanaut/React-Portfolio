@@ -1,8 +1,6 @@
-import WorkDay from "../images/WorkDay.png";
 import Workday2 from "../images/Workday2.png"
 import budgetTracker from "../images/budgetTracker.png";
 import techBlog from "../images/techBlog.png";
-import noteTaker from "../images/noteTaker.png";
 import noteTaker2 from "../images/noteTaker2.png"
 
 
