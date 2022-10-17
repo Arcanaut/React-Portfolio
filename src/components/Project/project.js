@@ -6,14 +6,14 @@ import { Stack, Box, Text } from '@chakra-ui/layout';
 
 const Project = () => {
     return (
-        <Stack className="list">
+        <Stack className="list" align="center">
             <Box className="list-texts">
                 <h1 className="list-title">Projects</h1>
                 <Text className="list-description">
 
                 </Text>
             </Box>
-            <Box className="list-list">
+            <Box className="list-list" >
                 {projects.map((item) => (
                     <Portfolio key={item.id}  title={item.title} img={item.img} description={item.description} skills={item.skills} link={item.link} github={item.github} />
                 ))}

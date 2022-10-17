@@ -6,7 +6,6 @@ import { useMediaQuery } from '@chakra-ui/react';
 import './header.css'
 
 
-
 function Header() {
     const { colorMode } = useColorMode(); 
     const isDark = colorMode === "dark";

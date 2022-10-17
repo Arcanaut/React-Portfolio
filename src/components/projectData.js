@@ -17,18 +17,10 @@ export const projects = [
         link: "https://arcanaut.github.io/Work-Day-Scheduler/",
         github: "https://github.com/Arcanaut/Work-Day-Scheduler",
     },
-    {
-        id: 2,
-        title: "Budget Tracker",
-         img: budgetTracker,
-        description: "A budgeting app that tracks money gained and money loss over time and builds a graph to represent the account history.",
-        skills: "Built with: HTML / CSS / Node.js / ",
-        link: "https://stormy-everglades-34049.herokuapp.com/",
-        github: "https://github.com/Arcanaut/Budget-Tracker",
-    },
+    
 
     {
-        id: 3,
+        id: 2,
         title: "Hello Word!",
         img: techBlog,
         description: "A techblog that allows the user to create an account, posts, and comments.",
@@ -38,7 +30,7 @@ export const projects = [
     },
 
     {
-        id: 4,
+        id: 3,
         title: "Note Taker",
         img: noteTaker2,
         description: "An app for keeping and saving notes",
@@ -46,7 +38,15 @@ export const projects = [
         link: "https://dry-atoll-32803.herokuapp.com/",
         github: "https://github.com/Arcanaut/Note-Taker",
     },
-
+{
+        id: 4,
+        title: "Budget Tracker",
+         img: budgetTracker,
+        description: "A budgeting app that tracks money gained and money loss over time and builds a graph to represent the account history.",
+        skills: "Built with: HTML / CSS / Node.js / ",
+        link: "https://stormy-everglades-34049.herokuapp.com/",
+        github: "https://github.com/Arcanaut/Budget-Tracker",
+    },
     {
         id: 5,
         title: "Portfolio",
