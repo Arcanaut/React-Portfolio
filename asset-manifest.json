@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.9b9bd803.css",
-    "main.js": "/React-Portfolio/static/js/main.77333449.js",
-    "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/Workday2.png": "/React-Portfolio/static/media/Workday2.f7e0c540abc48aaf789c.png",
-    "static/media/techBlog.png": "/React-Portfolio/static/media/techBlog.d0cc528a38f32be72b5b.png",
-    "static/media/portfolio.png": "/React-Portfolio/static/media/portfolio.c8b44e279bd0476f07c5.png",
-    "static/media/budgetTracker.png": "/React-Portfolio/static/media/budgetTracker.86ee13494512a9b90c83.png",
-    "static/media/noteTaker2.png": "/React-Portfolio/static/media/noteTaker2.9936cde0ca75586087d0.png",
-    "index.html": "/React-Portfolio/index.html",
-    "main.9b9bd803.css.map": "/React-Portfolio/static/css/main.9b9bd803.css.map",
-    "main.77333449.js.map": "/React-Portfolio/static/js/main.77333449.js.map",
-    "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.css": "/static/css/main.e1cc254d.css",
+    "main.js": "/static/js/main.4445a798.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Workday2.png": "/static/media/Workday2.f7e0c540abc48aaf789c.png",
+    "static/media/techBlog.png": "/static/media/techBlog.d0cc528a38f32be72b5b.png",
+    "static/media/portfolio.png": "/static/media/portfolio.c8b44e279bd0476f07c5.png",
+    "static/media/budgetTracker.png": "/static/media/budgetTracker.86ee13494512a9b90c83.png",
+    "static/media/noteTaker2.png": "/static/media/noteTaker2.9936cde0ca75586087d0.png",
+    "index.html": "/index.html",
+    "main.e1cc254d.css.map": "/static/css/main.e1cc254d.css.map",
+    "main.4445a798.js.map": "/static/js/main.4445a798.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b9bd803.css",
-    "static/js/main.77333449.js"
+    "static/css/main.e1cc254d.css",
+    "static/js/main.4445a798.js"
   ]
 }
