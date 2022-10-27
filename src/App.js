@@ -17,7 +17,7 @@ function App() {
    
 
   return (
-    <Router>
+    <Router basename="/">
       <Stack p={5}>
         <Nav></Nav>
           <Routes>
