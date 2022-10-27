@@ -1,6 +1,6 @@
 import React from 'react'
 //do not delete Router, Switch, or Route despite terminal saying they are unused/undefined. Deletion results in page unable to render
-import { BrowserRouter as Router, Switch, Route, NavLink, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, NavLink, Link } from "react-router-dom";
 import { IconButton, Button } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, Heading } from "@chakra-ui/layout";
